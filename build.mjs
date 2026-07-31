@@ -1,4 +1,4 @@
-import { copyFile, mkdir, rm } from 'node:fs/promises';
+import { copyFile, cp, mkdir, rm } from 'node:fs/promises';
 
 const files = [
   'index.html',
@@ -13,5 +13,6 @@ const files = [
 await rm('dist', { recursive: true, force: true });
 await mkdir('dist', { recursive: true });
 await Promise.all(files.map(file => copyFile(file, `dist/${file}`)));
+await cp('assets', 'dist/assets', { recursive: true });
 
 console.log(`Build concluído: ${files.length} arquivos publicados em dist/.`);
