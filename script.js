@@ -27,7 +27,7 @@ if (form) {
       `Estou procurando: ${data.get('interest')}.`,
       data.get('details') ? `Detalhes: ${data.get('details')}` : ''
     ].filter(Boolean).join('\n');
-    const destination = `https://bit.ly/WhatsAppdaNetFooT?text=${encodeURIComponent(message)}`;
+    const destination = `https://wa.me/5573991268473?text=${encodeURIComponent(message)}`;
     window.open(destination, '_blank', 'noopener');
   });
 }
