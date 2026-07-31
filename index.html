@@ -68,16 +68,52 @@
         <img src="assets/editorial/estilo-e-presenca.webp" alt="Tênis, sandália e frascos de perfume em composição elegante" loading="lazy">
       </div>
       <div class="editorial-content">
-        <p class="eyebrow">Guia Netfoot</p>
-        <h2 id="style-title">Vista o momento. Marque presença.</h2>
-        <p class="editorial-lead">Calçado e fragrância contam a mesma história: a forma como você quer chegar.</p>
-        <div class="editorial-guides">
-          <a href="calcados.html"><span>01</span><div><strong>Trabalho e rotina</strong><p>Conforto nos pés, fragrâncias frescas e uma presença segura durante o dia.</p></div></a>
-          <a href="perfumaria.html"><span>02</span><div><strong>Fim de semana</strong><p>Tênis casuais ou sandálias combinam com perfumes leves e descontraídos.</p></div></a>
-          <a href="atendimento.html?interesse=ocasiao-especial"><span>03</span><div><strong>Ocasiões especiais</strong><p>Modelos alinhados e fragrâncias marcantes para momentos que pedem mais.</p></div></a>
-          <a href="atendimento.html?interesse=esporte"><span>04</span><div><strong>Movimento e esporte</strong><p>Tênis esportivos encontram perfumes cítricos, frescos e aromáticos.</p></div></a>
+        <p class="eyebrow">Consultor de estilo Netfoot</p>
+        <h2 id="style-title">Qual presença combina com você?</h2>
+        <p class="editorial-lead">Faça três escolhas. O guia prepara uma combinação de calçado e fragrância para o seu momento.</p>
+        <div class="style-consultant" data-style-consultant>
+          <div class="consultant-progress" aria-label="Progresso do guia"><span class="active">1</span><i></i><span>2</span><i></i><span>3</span></div>
+          <fieldset class="consultant-step">
+            <legend><small>01</small> Para qual momento?</legend>
+            <div class="consultant-options">
+              <button type="button" data-group="occasion" data-value="trabalho">Trabalho e rotina</button>
+              <button type="button" data-group="occasion" data-value="fim-de-semana">Fim de semana</button>
+              <button type="button" data-group="occasion" data-value="especial">Ocasião especial</button>
+              <button type="button" data-group="occasion" data-value="movimento">Movimento e esporte</button>
+            </div>
+          </fieldset>
+          <fieldset class="consultant-step">
+            <legend><small>02</small> O que você prioriza?</legend>
+            <div class="consultant-options">
+              <button type="button" data-group="priority" data-value="conforto">Conforto</button>
+              <button type="button" data-group="priority" data-value="elegancia">Elegância</button>
+              <button type="button" data-group="priority" data-value="versatilidade">Versatilidade</button>
+            </div>
+          </fieldset>
+          <fieldset class="consultant-step">
+            <legend><small>03</small> Qual fragrância mais atrai?</legend>
+            <div class="consultant-options">
+              <button type="button" data-group="scent" data-value="fresco">Fresca</button>
+              <button type="button" data-group="scent" data-value="doce">Doce</button>
+              <button type="button" data-group="scent" data-value="amadeirado">Amadeirada</button>
+              <button type="button" data-group="scent" data-value="intenso">Intensa</button>
+            </div>
+          </fieldset>
+          <button class="button primary consultant-submit" type="button" disabled>Descobrir minha combinação</button>
+          <div class="consultant-result" aria-live="polite" hidden>
+            <p class="eyebrow">Sua combinação Netfoot</p>
+            <h3></h3>
+            <p class="result-copy"></p>
+            <div class="result-pair">
+              <div><span>Calçado</span><strong data-result-shoe></strong></div><b>+</b>
+              <div><span>Fragrância</span><strong data-result-scent></strong></div>
+            </div>
+            <div class="result-actions">
+              <a class="button primary" data-result-contact href="atendimento.html">Pedir opções à Netfoot</a>
+              <button class="text-link consultant-reset" type="button">Refazer o guia</button>
+            </div>
+          </div>
         </div>
-        <div class="editorial-actions"><a class="button primary" href="calcados.html">Explorar calçados</a><a class="text-link" href="perfumaria.html">Conhecer perfumaria →</a></div>
       </div>
     </section>
 
